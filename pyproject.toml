@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools==75.8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "microgrid-peak-study"
+version = "0.1.0"
+description = "Reproducible grid import peak measurement and dispatch interfaces"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+microgrid-peak = "microgrid.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["microgrid"]
